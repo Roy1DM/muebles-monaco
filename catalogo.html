@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo — Muebles Mónaco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .catalogo-page {
+      padding: 8rem 5vw 5rem;
+      background: var(--gray50);
+    }
+    .catalogo-page-header {
+      margin-bottom: 3.5rem;
+    }
+    .productos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .prod-item {
+      background: var(--white);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .prod-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+    }
+    .prod-item img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s;
+    }
+    .prod-item:hover img {
+      transform: scale(1.04);
+    }
+    .prod-item-info {
+      padding: 1.2rem 1.4rem 1.4rem;
+      border-top: 2px solid var(--g100);
+    }
+    .prod-item-name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--black);
+    }
+    .prod-item-sub {
+      font-size: 0.75rem;
+      color: var(--gray400);
+      letter-spacing: 0.08em;
+      margin-top: 0.2rem;
+    }
+    @media (max-width: 900px) {
+      .productos-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 500px) {
+      .productos-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" class="scrolled">
+    <a href="index.html" class="nav-logo">
+      <img src="1776305229606_image.png" alt="Muebles Mónaco"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+      <span class="nav-logo-text" style="display:none">Muebles Mónaco</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="contacto.html">Contáctanos</a></li>
+    </ul>
+  </nav>
+
+  <div class="catalogo-page">
+    <div class="catalogo-page-header reveal">
+      <p class="section-tag">Colección 2026</p>
+      <h1 class="section-h">Catálogo <em>Mónaco</em></h1>
+      <p style="color:var(--gray600); margin-top:0.8rem; font-size:0.95rem;">
+        Somos parte de tu hogar.
+      </p>
+    </div>
+
+    <div class="productos-grid">
+
+      <div class="prod-item reveal">
+        <img src="img/Adela 3CHT.jpeg" alt="Adela 3CHT"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Adela</div>
+          <div class="prod-item-sub">3CHT</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Alton 32.jpeg" alt="Alton 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Alton</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d2">
+        <img src="img/Anya 32.jpeg" alt="Anya 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Anya</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal">
+        <img src="img/Austria 321.jpeg" alt="Austria 321"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Austria</div>
+          <div class="prod-item-sub">321</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Blue 312.jpeg" alt="Blue 312"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Blue</div>
+          <div class="prod-item-sub">312</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d2">
+        <img src="img/Brigitte 32.jpeg" alt="Brigitte 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Brigitte</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal">
+        <img src="img/Charlotte-321.jpeg" alt="Charlotte 321"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Charlotte</div>
+          <div class="prod-item-sub">321</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Daniela 32.jpeg" alt="Daniela 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Daniela</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d2">
+        <img src="img/Fabiana 32.jpeg" alt="Fabiana 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Fabiana</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal">
+        <img src="img/Faryl 22E.jpeg" alt="Faryl 22E"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Faryl</div>
+          <div class="prod-item-sub">22E</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Hamilton-21-CHT.jpeg" alt="Hamilton 21-C HT"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Hamilton</div>
+          <div class="prod-item-sub">21-C HT</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d2">
+        <img src="img/Jordyn 32 CHT.jpeg" alt="Jordyn 32 CHT"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Jordyn</div>
+          <div class="prod-item-sub">32 CHT</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal">
+        <img src="img/Julie 321.jpeg" alt="Julie 321"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Julie</div>
+          <div class="prod-item-sub">321</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Katina 7 piezas.jpeg" alt="Katina 7 piezas"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Katina</div>
+          <div class="prod-item-sub">7 piezas</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d2">
+        <img src="img/Leslie-2ch.jpeg" alt="Leslie 2ch"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Leslie</div>
+          <div class="prod-item-sub">2ch</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal">
+        <img src="img/Merida 312.jpeg" alt="Merida 312"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Mérida</div>
+          <div class="prod-item-sub">312</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Mónaco 321.jpeg" alt="Mónaco 321"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Mónaco</div>
+          <div class="prod-item-sub">321</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d2">
+        <img src="img/Natalia 2B.jpeg" alt="Natalia 28"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Natalia</div>
+          <div class="prod-item-sub">28</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal">
+        <img src="img/Nora 32.jpeg" alt="Nora 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Nora</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Nuria 32.jpeg" alt="Nuria 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Nuria</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal">
+        <img src="img/Paris 32.jpeg" alt="Paris 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Paris</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Peralta 321.jpeg" alt="Peralta 321"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Peralta</div>
+          <div class="prod-item-sub">321</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d2">
+        <img src="img/Selene 32.jpeg" alt="Selene 32"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Selene</div>
+          <div class="prod-item-sub">32</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal">
+        <img src="img/Sky 321.jpeg" alt="Sky 321"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Sky</div>
+          <div class="prod-item-sub">321</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d1">
+        <img src="img/Stella 3CH.jpeg" alt="Stella 3CH"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Stella</div>
+          <div class="prod-item-sub">3CH</div>
+        </div>
+      </div>
+
+      <div class="prod-item reveal d2">
+        <img src="img/Victoria 33.jpeg" alt="Victoria 33"/>
+        <div class="prod-item-info">
+          <div class="prod-item-name">Victoria</div>
+          <div class="prod-item-sub">33</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-logo">
+      <img src="1776305229606_image.png" alt="Muebles Mónaco"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+      <span class="foot-logo-txt" style="display:none">Muebles Mónaco</span>
+    </div>
+    <div class="foot-social">
+      <a href="https://facebook.com/mueblesmonaco" target="_blank">
+        <svg viewBox="0 0 24 24" width="20" fill="white" opacity="0.5">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com/mueblesmonaco" target="_blank">
+        <svg viewBox="0 0 24 24" width="20" fill="none" stroke="white" stroke-width="1.5" opacity="0.5">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="white"/>
+        </svg>
+      </a>
+    </div>
+    <p class="foot-copy">© 2025 Muebles Mónaco · 60 años de tradición · Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+</html>
